@@ -1,10 +1,15 @@
-/* 
- * There is no need to update the logic in this file. The main method only exists so you can see the output of your logic without running the tests
- * 
- * Please go to "AdvancedBooleanLogic.java" to complete the lab. 
- * 
- */
+// This file is optional to edit and can be used for manual testing.
+
 public class Main {
+
+    /**
+     * The entry point of the application.
+     * 
+     * This method creates an AdvancedBooleanLogic object and manually tests its
+     * methods by calling them and printing out the results.
+     * 
+     * @param args - Command line arguments (not used in this application)
+     */
     public static void main(String[] args) {
         AdvancedBooleanLogic abl = new AdvancedBooleanLogic();
         

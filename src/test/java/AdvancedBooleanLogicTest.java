@@ -4,14 +4,18 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class AdvancedBooleanLogicTest {
+
     static AdvancedBooleanLogic abl;
+
     @BeforeClass
     public static void setUp(){
         abl = new AdvancedBooleanLogic();
     }
 
     /**
-     * With inputs true and true, notBoth should return false, because both of the inputs are true.
+     * Tests the returnNotBoth() method of the AdvanedBooleanLogic class.
+     * 
+     * This test verifies that, if returnNotBoth() receives a values of `true` and `true`, it returns `false`.
      */
     @Test
     public void returnNotBothTest1(){
@@ -21,8 +25,11 @@ public class AdvancedBooleanLogicTest {
         boolean actual = abl.returnNotBoth(input1, input2);
         Assert.assertEquals(expected, actual);
     }
+
     /**
-     * With inputs true and false, notBoth should return true, because not both of the inputs are true.
+     * Tests the returnNotBoth() method of the AdvanedBooleanLogic class.
+     * 
+     * This test verifies that, if returnNotBoth() receives a values of `true` and `false`, it returns `true`.
      */
     @Test
     public void returnNotBothTest2(){
@@ -32,8 +39,11 @@ public class AdvancedBooleanLogicTest {
         boolean actual = abl.returnNotBoth(input1, input2);
         Assert.assertEquals(expected, actual);
     }
+
     /**
-     * With inputs false and true, notBoth should return true, because not both of the inputs are true.
+     * Tests the returnNotBoth() method of the AdvanedBooleanLogic class.
+     * 
+     * This test verifies that, if returnNotBoth() receives a values of `false` and `true`, it returns `true`.
      */
     @Test
     public void returnNotBothTest3(){
@@ -43,8 +53,11 @@ public class AdvancedBooleanLogicTest {
         boolean actual = abl.returnNotBoth(input1, input2);
         Assert.assertEquals(expected, actual);
     }
+    
     /**
-     * With inputs false and false, notBoth should return true, because not both of the inputs are true.
+     * Tests the returnNotBoth() method of the AdvanedBooleanLogic class.
+     * 
+     * This test verifies that, if returnNotBoth() receives a values of `false` and `false`, it returns `true`.
      */
     @Test
     public void returnNotBothTest4(){
@@ -54,8 +67,11 @@ public class AdvancedBooleanLogicTest {
         boolean actual = abl.returnNotBoth(input1, input2);
         Assert.assertEquals(expected, actual);
     }
+
     /**
-     * With inputs true and true, exclusiveOr should return false, because both of the inputs are true.
+     * Tests the returnExclusiveOr() method of the AdvanedBooleanLogic class.
+     * 
+     * This test verifies that, if returnExclusiveOr() receives a values of `true` and `true`, it returns `false`.
      */
     @Test
     public void returnExclusiveOrTest1(){
@@ -65,8 +81,11 @@ public class AdvancedBooleanLogicTest {
         boolean actual = abl.returnExclusiveOr(input1, input2);
         Assert.assertEquals(expected, actual);
     }
+    
     /**
-     * With inputs true and false, exclusiveOr should return true, because only one of the inputs is true.
+     * Tests the returnExclusiveOr() method of the AdvanedBooleanLogic class.
+     * 
+     * This test verifies that, if returnExclusiveOr() receives a values of `true` and `false`, it returns `true`.
      */
     @Test
     public void returnExclusiveOrTest2(){
@@ -76,8 +95,11 @@ public class AdvancedBooleanLogicTest {
         boolean actual = abl.returnExclusiveOr(input1, input2);
         Assert.assertEquals(expected, actual);
     }
+    
     /**
-     * With inputs false and true, exclusiveOr should return true, because only one of the inputs is true.
+     * Tests the returnExclusiveOr() method of the AdvanedBooleanLogic class.
+     * 
+     * This test verifies that, if returnExclusiveOr() receives a values of `false` and `true`, it returns `true`.
      */
     @Test
     public void returnExclusiveOrTest3(){
@@ -87,8 +109,11 @@ public class AdvancedBooleanLogicTest {
         boolean actual = abl.returnExclusiveOr(input1, input2);
         Assert.assertEquals(expected, actual);
     }
+    
     /**
-     * With inputs false and false, exclusiveOr should return true, because none of the inputs are true.
+     * Tests the returnExclusiveOr() method of the AdvanedBooleanLogic class.
+     * 
+     * This test verifies that, if returnExclusiveOr() receives a values of `false` and `false`, it returns `false`.
      */
     @Test
     public void returnExclusiveOrTest4(){
@@ -98,8 +123,11 @@ public class AdvancedBooleanLogicTest {
         boolean actual = abl.returnExclusiveOr(input1, input2);
         Assert.assertEquals(expected, actual);
     }
+    
     /**
-     * With inputs true and true, neitherNor should return false, because not all of the inputs are false.
+     * Tests the returnNeitherNor() method of the AdvanedBooleanLogic class.
+     * 
+     * This test verifies that, if returnNeitherNor() receives a values of `true` and `true`, it returns `false`.
      */
     @Test
     public void returnNeitherNorTest1(){
@@ -109,8 +137,11 @@ public class AdvancedBooleanLogicTest {
         boolean actual = abl.returnNeitherNor(input1, input2);
         Assert.assertEquals(expected, actual);
     }
+
     /**
-     * With inputs false and true, neitherNor should return false, because not all of the inputs are false.
+     * Tests the returnNeitherNor() method of the AdvanedBooleanLogic class.
+     * 
+     * This test verifies that, if returnNeitherNor() receives a values of `false` and `true`, it returns `false`.
      */
     @Test
     public void returnNeitherNorTest2(){
@@ -120,8 +151,11 @@ public class AdvancedBooleanLogicTest {
         boolean actual = abl.returnNeitherNor(input1, input2);
         Assert.assertEquals(expected, actual);
     }
+    
     /**
-     * With inputs true and false, neitherNor should return false, because not all of the inputs are false.
+     * Tests the returnNeitherNor() method of the AdvanedBooleanLogic class.
+     * 
+     * This test verifies that, if returnNeitherNor() receives a values of `true` and `false`, it returns `false`.
      */
     @Test
     public void returnNeitherNorTest3(){
@@ -131,8 +165,11 @@ public class AdvancedBooleanLogicTest {
         boolean actual = abl.returnNeitherNor(input1, input2);
         Assert.assertEquals(expected, actual);
     }
+    
     /**
-     * With inputs false and false, neitherNor should return true, because all of the inputs are false.
+     * Tests the returnNeitherNor() method of the AdvanedBooleanLogic class.
+     * 
+     * This test verifies that, if returnNeitherNor() receives a values of `false` and `false`, it returns `true`.
      */
     @Test
     public void returnNeitherNorTest4(){
